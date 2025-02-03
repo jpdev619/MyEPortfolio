@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design By JP</title>
+    @vite(['public/css/colorswitcher.css', 'public/css/profileHome.css','resources/js/style-switcher.js'])
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="{{asset('css/profilehomecolor.css')}}" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="{{asset('css/profilehomecolor2.css')}}" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="{{asset('css/profilehomecolor3.css')}}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{{asset('css/profilehomecolor4.css')}}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{{asset('css/profilehomecolor5.css')}}" class="alternate-style" title="color-5" disabled>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- <div class="navbar"> -->
+
+    <!-- @include('layouts.navbar') -->
+
+    @yield('home')
+    <!-- </div> -->
+
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>JPV</span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#Skills"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#Portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#Contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home Section start-->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hi, I'm <span>John Philip Villanueva</span></h3>
+                            <h3 class="my-profession"><span class="typing"></span></h3>
+                            <p>You can call me JP. I am a dedicated, hardworking, and collaborative team player. Click the button below to learn more about me.</p>
+                            <a href="#about" class="btn hire-me">More About Me</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="{{URL ('image/notoga.jpg')}}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section end-->
+            <!-- About Section start-->
+            <section class="about section padd-15" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm John Philip Villanueva and i'm an <span> Application Developer</span></h3>
+                                    <p>I have expertise in PHP, Laravel, HTML, CSS and JavaScript. I am excited about joining your company and showing what I can do to improve your web applications</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>LinkedIn : <span>LinkedIn.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span><a href="mailto:Johnphilip0275@gmail.com">Johnphilip0275@gmail.com</a></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>Bachelor of Science in Information Technology</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>College : <span>Polytechnic University of the Philippines Quezon City</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Current City : <span>Quezon City</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : Smart <span>09618499445</span> / Dito <span>09618465492</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn">Download cv</a>
+                                            <a href="#contact" class="btn hire-me">hire me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2017 - Oct 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Bachelor of Science in Information Technology
+                                                    </h4>
+                                                    <p class="timeline-text">Polytechnic University of the Philippines Quezon City</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Feb 2017 - April 2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Barista NC II
+                                                    </h4>
+                                                    <p class="timeline-text">Tesda Commonwealth</p>
+
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2011 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        High School (Secondary)
+                                                    </h4>
+                                                    <p class="timeline-text">North Fairview High School</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Mar 2022 - Aug 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Application Developer
+                                                    </h4>
+                                                    <p class="timeline-text">Allcard Technologies - I developed internal tools for managing products and inventory, optimized the performance of company websites, and administered the eCommerce platform, improving both user experience and operational efficiency. I possess strong skills in PHP Laravel, CSS, Bootstrap, RESTful API, JavaScript/TypeScript, MySQL, WordPress, and GitHub, with experience in managing and enhancing eCommerce solutions.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Oct 2020 - Aug 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Capstone - Documentation
+                                                    </h4>
+                                                    <p class="timeline-text">PUPQC - I was responsible for the documentation of an app designed to support school guidance counseling. The app aimed to help students address mental health issues by providing a platform for seeking counseling support. My tasks included documenting the development process, writing project reports, and ensuring the clear communication of the app's features.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2019 - Aug 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Research - Developer/Documentation
+                                                    </h4>
+                                                    <p class="timeline-text">PUPQC - I independently developed and documented "Adoptar App," an eCommerce website designed for selling pets and exotic animals. I was responsible for building the app from scratch, which included designing user flows, implementing key features like product listings, user accounts, and payment processing. Additionally, I completed thorough documentation outlining the development process, user interface, and system architecture, ensuring the project was well-structured and scalable for future enhancements.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- About Section end-->
+            <!-- Services Section Start -->
+            <section class="service section " id="Skills">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Skills</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-php-plain"></i>
+                                </div>
+                                <h4>PHP</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-laravel-original"></i>
+                                </div>
+                                <h4>Laravel</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-html5-plain"></i>
+                                </div>
+                                <h4>HTML 5</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-css3-plain"></i>
+                                </div>
+                                <h4>CSS</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-javascript-plain"></i>
+                                </div>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-tailwindcss-original"></i>
+                                </div>
+                                <h4>Tailwind</h4>
+                            </div>
+                        </div>
+                        <!-- service items Start -->
+                          <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-vitejs-plain"></i>
+                                </div>
+                                <h4>Vite</h4>
+                            </div>
+                        </div>
+                        <!-- service items Start -->
+                        <!-- service items End -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-vuejs-plain"></i>
+                                </div>
+                                <h4>Vue</h4>
+                            </div>
+                        </div>
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-bootstrap-plain"></i>
+                                </div>
+                                <h4>Bootstrap</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-jquery-plain-wordmark"></i>
+                                </div>
+                                <h4>jquery</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-json-plain"></i>
+                                </div>
+                                <h4>Json</h4>
+                            </div>
+                        </div>
+
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-mysql-original"></i>
+                                </div>
+                                <h4>MySQL</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-github-original"></i>
+                                </div>
+                                <h4>GitHub</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-wordpress-plain"></i>
+                                </div>
+                                <h4>WordPress</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-vscode-plain"></i>
+                                </div>
+                                <h4>Visual Studio Code</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-linux-plain"></i>
+                                </div>
+                                <h4>Linux</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                        <!-- service items Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa devicon-microsoftsqlserver-plain"></i>
+                                </div>
+                                <h4>MSSQL SERVER</h4>
+                            </div>
+                        </div>
+                        <!-- service items End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section End -->
+            <!-- portfolio Section Start -->
+            <section class="portfolio section" id="Portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="section-Heading padd-15">
+                            <h2>My Last Project :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshot3.PNG')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshots1.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshots.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshots1.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshots.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                        <!-- Portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="{{URL ('image/screenshot3.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio Section End -->
+            <!-- Contact Form Section Start -->
+            <section class="contact section" id="Contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <div class="contact-title padd-15">Have you any Questions ?</div>
+                    <div class="contact-sub-title padd-15">Feel Free To Message me</div>
+                    <div class="row flex flex-col">
+                        <!-- Contact Item start-->
+                        <div class="contact-info-item">
+                            <div class="icon padd-15"><i class="fa fa-mobile-alt"></i>
+                                <h4>Call me on my Phone number</h4>
+                                <p>Smart - 09618499445 <br> Dito - 09649865465</p>
+                            </div>
+                        </div>
+                        <!-- Contact Item End  -->
+                        <!-- Contact Item start-->
+                        <div class="contact-info-item">
+                            <div class="icon padd-15"><i class="fa fa-envelope"></i>
+                                <h4>Email Me Here</h4>
+                                <p>Johnphilip0275@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- Contact Item End  -->
+                        <!-- Contact Item start-->
+                        <div class="contact-info-item">
+                            <div class="icon padd-15"><i class="fa-brands fa-linkedin"></i>
+                                <h4>My LinkedIn Profile</h4>
+                                <p>www.linkedin.com/in/john-philip-villanueva-630b99219</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contact-title">Send Me an Email</div>
+                    <!-- Contact Form Section Start -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="subject">
+                                    </div>
+                                </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form Section End -->
+                </div>
+            </section>
+        </div>
+        <!-- Main Content End -->
+        <!-- Switch Style start -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Color</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- Switch Style End -->
+    </div>
+</body>
+
+</html>
