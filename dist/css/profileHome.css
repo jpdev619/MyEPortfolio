@@ -641,11 +641,22 @@ h3.my-profession {
 }
 
 /* contact */
+
+
 .contact-title {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
+    
+}
+
+.contact-title-email {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: none;
 }
 
 .contact-sub-title {
@@ -694,6 +705,7 @@ h3.my-profession {
 .contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
+    display: none;
 }
 
 .contact .contact-form .col-6 {
